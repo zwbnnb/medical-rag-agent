@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "血压 135/85 算高吗？该怎么测更准？",
+    "expect_tools": ["classify_blood_pressure"]
+  },
+  {
+    "id": 2,
+    "question": "空腹血糖 6.5 mmol/L 需要注意什么？",
+    "expect_tools": ["classify_blood_glucose"]
+  },
+  {
+    "id": 3,
+    "question": "智能客服能不能直接给人开降压药？",
+    "expect_tools": []
+  },
+  {
+    "id": 4,
+    "question": "Residual-DPLS 公开基准大概多少 R²？",
+    "expect_tools": ["project_metrics_lookup"]
+  },
+  {
+    "id": 5,
+    "question": "GDSC 药敏实验大概用了多少样本？",
+    "expect_tools": ["project_metrics_lookup"]
+  }
+]
