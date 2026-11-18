@@ -5,7 +5,7 @@ from langchain_core.tools import tool
 
 @tool
 def classify_blood_pressure(systolic: float, diastolic: float) -> str:
-    """根据收缩压/舒张压(mmHg)给出家庭监测示意分级。仅供 Demo，非诊疗。"""
+    """根据收缩压/舒张压(mmHg)给出家庭监测示意分级。仅供参考，非诊疗。"""
     s, d = float(systolic), float(diastolic)
     if s >= 180 or d >= 120:
         level = "可能达到需紧急关注的示意区间"
@@ -27,7 +27,7 @@ def classify_blood_pressure(systolic: float, diastolic: float) -> str:
 
 @tool
 def classify_blood_glucose(value_mmol_l: float, fasting: bool = True) -> str:
-    """根据血糖(mmol/L)与是否空腹给出示意分级。仅供 Demo，非诊疗。"""
+    """根据血糖(mmol/L)与是否空腹给出示意分级。仅供参考，非诊疗。"""
     v = float(value_mmol_l)
     if v < 3.9:
         level = "偏低/低血糖警惕示意"
@@ -55,7 +55,7 @@ def classify_blood_glucose(value_mmol_l: float, fasting: bool = True) -> str:
 
 @tool
 def project_metrics_lookup(topic: str) -> str:
-    """查询本 Demo 固化的课题量级指标（Residual-DPLS / GDSC）。topic 可为 dpls、gdsc、r2 等。"""
+    """查询内置的课题量级指标（Residual-DPLS / GDSC）。topic 可为 dpls、gdsc、r2 等。"""
     t = (topic or "").lower()
     facts = {
         "dpls": "Residual-DPLS：主效应→残差结构学习→硬边特征→软融合；公开基准均值 R²≈0.84 量级。",
