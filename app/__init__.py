@@ -1,3 +1,3 @@
-"""Medical / bio RAG Agent demo for internship portfolio."""
+"""Medical RAG agent with tool calling."""
 
 __version__ = "0.1.0"
