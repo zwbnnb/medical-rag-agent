@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""跑 5 道标准测试题，结果写入 tests/last_run.jsonl，便于截图留档。"""
+"""跑 5 道标准测试题，结果写入 tests/last_run.jsonl。"""
 from __future__ import annotations
 
 import json
@@ -43,7 +43,7 @@ def main() -> None:
     )
     print("\n" + "=" * 60)
     print(f"已保存：{out_path}")
-    print("请对终端输出与网页 http://127.0.0.1:8000 截图留档。")
+    print("服务地址示例：http://127.0.0.1:8000")
 
 
 if __name__ == "__main__":
