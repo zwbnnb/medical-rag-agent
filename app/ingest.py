@@ -11,7 +11,7 @@ from app.config import settings
 
 
 class HashEmbeddings(Embeddings):
-    """无 API Key 时的确定性伪向量，保证本地可建库、可检索（演示级）。"""
+    """无 API Key 时的确定性伪向量，保证本地可建库、可检索。"""
 
     def __init__(self, dim: int = 64):
         self.dim = dim
