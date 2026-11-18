@@ -11,8 +11,8 @@ from app.agent import run_agent
 from app.config import settings
 
 app = FastAPI(
-    title="Medical RAG Agent Demo",
-    description="家用医疗监测科普 + 课题知识 RAG Agent（求职作品）",
+    title="Medical RAG Agent",
+    description="Home-health RAG agent with tool calling (FastAPI)",
     version="0.1.0",
 )
 
