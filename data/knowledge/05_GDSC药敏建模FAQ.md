@@ -1,6 +1,6 @@
-# GDSC 药敏建模 FAQ（课题数据场景 · 演示）
+# GDSC 药敏建模 FAQ
 
-> 基于作者在 GDSC / Cell Model Passports 表达 → 药物 AUC 任务上的实验叙述，供 RAG 演示。
+> 基于 GDSC / Cell Model Passports 表达 → 药物 AUC 任务的公开实验叙述，供知识库检索引用。
 
 ## 数据是什么
 
@@ -17,7 +17,7 @@
 
 在部分划分上可导出与 5-FU 代谢叙事相关的 hub 交互（如涉及 TYMP 的边）。主张应强调「置换敏感性 / 可解释」，避免夸大全面板全面超越 PLSR。
 
-## Agent 可回答的问题示例
+## 常见问题示例
 
 - 「你们药敏实验大概多少样本？」→ 检索本文 n≈397。  
 - 「Residual-DPLS 和 PLSR 比怎么样？」→ 结合公开基准与 GDSC 分开说。  
