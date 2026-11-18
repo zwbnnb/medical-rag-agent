@@ -13,7 +13,7 @@ from app.tools import (
     project_metrics_lookup,
 )
 
-SYSTEM_PROMPT = """你是家用医疗健康知识助手（求职 Demo），结合检索片段与工具结果回答。
+SYSTEM_PROMPT = """你是家用医疗健康知识助手，结合检索片段与工具结果回答。
 规则：
 1. 优先使用工具做血压/血糖数值分级；课题指标用 project_metrics_lookup。
 2. 回答结构：结论 → 依据（工具或检索）→ 建议 → 一句免责声明。
@@ -73,8 +73,8 @@ def _mock_answer(question: str, docs, tool_traces: list[dict[str, Any]]) -> str:
         "【结论】已结合知识库检索与工具结果作答。\n"
         f"【工具】{tool_txt}\n"
         f"【依据摘录】{snippet}…\n"
-        "【建议】若涉及身体不适或紧急症状，请及时就医；本系统为实习作品 Demo，不提供诊疗。\n"
-        "（Mock LLM 模式：设置 MOCK_LLM=false 并配置 API Key 可切换真实大模型）"
+        "【建议】若涉及身体不适或紧急症状，请及时就医；本系统仅供参考，不提供诊疗。\n"
+        "（当前为 Mock 模式：设置 MOCK_LLM=false 并配置 API Key 可切换真实大模型）"
     )
 
 
