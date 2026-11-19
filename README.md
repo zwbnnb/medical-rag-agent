@@ -72,3 +72,9 @@ tests/            # fixed questions
 ## Disclaimer
 
 Educational / engineering demo only. Not medical advice. Knowledge texts are general summaries.
+
+## Demo
+
+| Landing | Ask & Answer | Trace |
+| --- | --- | --- |
+| ![Landing](screenshots/01_landing.jpg) | ![Ask & Answer](screenshots/02_ask_answer.jpg) | ![Trace](screenshots/03_trace.jpg) |
